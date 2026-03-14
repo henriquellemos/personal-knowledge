@@ -1,4 +1,4 @@
-package com.personal.knowledge.api;
+package com.personal.knowledge;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -9,5 +9,4 @@ class PersonalKnowledgeApiApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }

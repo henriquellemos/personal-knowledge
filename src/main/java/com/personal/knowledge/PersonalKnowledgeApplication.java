@@ -1,13 +1,12 @@
-package com.personal.knowledge.api;
+package com.personal.knowledge;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PersonalKnowledgeApiApplication {
+public class PersonalKnowledgeApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PersonalKnowledgeApiApplication.class, args);
+		SpringApplication.run(PersonalKnowledgeApplication.class, args);
 	}
-
 }
