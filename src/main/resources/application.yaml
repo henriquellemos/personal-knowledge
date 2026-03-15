@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: Personal Knowledge API
+  jpa:
+    database: h2
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+  datasource:
+    url: jdbc:h2:mem:personalknowledge
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: test
+  h2:
+    console:
+      enabled: true
+
