@@ -1,16 +1,6 @@
 package com.personal.knowledge.model;
 
-import jakarta.persistence.CollectionTable;
-import jakarta.persistence.Column;
-import jakarta.persistence.ElementCollection;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.PrePersist;
-import jakarta.persistence.PreUpdate;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
@@ -20,14 +10,15 @@ import java.util.UUID;
 @Getter
 @Setter
 @ToString
-@Builder
+@Builder(toBuilder = true)
 @Entity
 @Table(name = "knowledge_notes")
+@NoArgsConstructor
 @AllArgsConstructor
 public class KnowledgeNote {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
     private String title;
